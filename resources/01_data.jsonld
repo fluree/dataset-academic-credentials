@@ -1,0 +1,131 @@
+{
+  "ledger": "fluree-jld/369435906932746",
+  "txn": {
+    "@context": {
+      "clr": "https://purl.imsglobal.org/spec/vc/ob/vocab.html#",
+      "acd": "https://academic-credential-dataset.net/ns/"
+    },
+    "@graph": [
+      {
+        "id": "acd:achievements/MAT117",
+        "type": "clr:Achievement",
+        "clr:achievementType": "schema:Course",
+        "clr:creditsAvailable": 3.0,
+        "clr:humanCode": "MAT 117",
+        "clr:name": "College Algebra",
+        "clr:description": "Linear functions, quadratic functions, general polynomial functions, rational functions, systems of linear equations, logarithmic and exponential functions."
+      },
+      {
+        "id": "acd:achievements/ENG101",
+        "type": "clr:Achievement",
+        "clr:achievementType": "schema:Course",
+        "clr:creditsAvailable": 3.0,
+        "clr:humanCode": "ENG 101",
+        "clr:name": "First-Year Composition",
+        "clr:description": "Discovers, organizes and develops ideas in relation to the writer's purpose, subject and audience. Emphasizes modes of written discourse and effective use of rhetorical principles."
+      },
+      {
+        "id": "acd:achievements/BIO100",
+        "type": "clr:Achievement",
+        "clr:achievementType": "schema:Course",
+        "clr:creditsAvailable": 4.0,
+        "clr:humanCode": "BIO 100",
+        "clr:name": "The Living World",
+        "clr:description": "Principles of biology. Cannot be used for major credit in the biological sciences."
+      },
+      {
+        "id": "acd:achievements/ECN211",
+        "type": "clr:Achievement",
+        "clr:achievementType": "schema:Course",
+        "clr:creditsAvailable": 4.0,
+        "clr:humanCode": "ECN 211",
+        "clr:name": "Macroeconomic Principles",
+        "clr:description": "Introductory course in macroeconomics. Topics include the measurement and modeling of output, national income, inflation and unemployment; the determinants of cross-country differences in income; the functions of money and the banking system; the causes of and policy responses to recessions; the effect of monetary and fiscal policy on interest rates and national income."
+      },
+      {
+        "id": "acd:achievements/SPA101",
+        "type": "clr:Achievement",
+        "clr:achievementType": "schema:Course",
+        "clr:creditsAvailable": 4.0,
+        "clr:humanCode": "SPA 101",
+        "clr:name": "Elementary Spanish I",
+        "clr:description": "Fundamentals of the language. Emphasizes listening, speaking, reading, and writing."
+      },
+      {
+        "id": "acd:learners/freddyyeti1",
+        "type": "clr:Profile",
+        "schema:givenName": "Freddy",
+        "schema:familyName": "Yeti",
+        "schema:email": "freddyyeti1@asu.edu",
+        "clr:dateOfBirth": "2016-11-24",
+        "acd:profileType": "Learner"
+      },
+      {
+        "id": "acd:learners/lucialong3",
+        "type": "clr:Profile",
+        "schema:givenName": "Lucia",
+        "schema:familyName": "Long",
+        "schema:email": "lucialong3@asu.edu",
+        "clr:dateOfBirth": "2023-01-30",
+        "acd:profileType": "Learner"
+      },
+      {
+        "id": "acd:learners/nessieelasmo1",
+        "type": "clr:Profile",
+        "schema:givenName": "Nessie",
+        "schema:familyName": "Elasmosauridae",
+        "schema:email": "nessieelasmo1@asu.edu",
+        "clr:dateOfBirth": "564-08-22",
+        "acd:profileType": "Learner"
+      },
+      {
+        "id": "acd:institutions/wssu",
+        "type": "clr:Profile",
+        "schema:name": "Winston-Salem State University",
+        "schema:url": "https://wssu.edu/",
+        "acd:profileType": "Institution"
+      },
+      {
+        "id": "acd:institutions/wfu",
+        "type": "clr:Profile",
+        "schema:name": "Wake Forest University",
+        "schema:url": "https://www.wfu.edu/",
+        "acd:profileType": "Institution"
+      },
+      {
+        "id": "acd:institutions/ftcc",
+        "type": "clr:Profile",
+        "schema:name": "Forsyth Tech Community College",
+        "schema:url": "https://forsythtech.edu/",
+        "acd:profileType": "Institution"
+      },
+      {
+        "id": "acd:employers/volvogroup",
+        "type": "clr:Profile",
+        "schema:name": "Volvo Group",
+        "schema:url": "https://www.volvogroup.com/",
+        "acd:profileType": "Employer"
+      },
+      {
+        "id": "acd:employers/hondajet",
+        "type": "clr:Profile",
+        "schema:name": "Honda Aircraft Company",
+        "schema:url": "https://www.hondajet.com/",
+        "acd:profileType": "Employer"
+      },
+      {
+        "id": "acd:credentials/1",
+        "type": "clr:AchievementSubject",
+        "clr:achievement": {
+          "id": "acd:achievements/MAT117"
+        },
+        "clr:source": {
+          "id": "acd:institutions/wssu"
+        },
+        "acd:learner": {
+          "id": "acd:learners/freddyyeti1"
+        }
+      }
+    ]
+  }
+}
