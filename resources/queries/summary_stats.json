@@ -1,0 +1,45 @@
+{
+  "ledger": "academic-credentials-dataset",
+  "query": {
+    "select": [
+      "(count ?learners)",
+      "(count ?institutions)",
+      "(count ?employers)",
+      "(count ?achievements)",
+      "(count ?courses)",
+      "(count ?degrees)"
+    ],
+    "where": [
+      [
+        "?learners",
+        "acd:profileType",
+        "Learner"
+      ],
+      [
+        "?institutions",
+        "acd:profileType",
+        "Institution"
+      ],
+      [
+        "?employers",
+        "acd:profileType",
+        "Employer"
+      ],
+      [
+        "?achievements",
+        "type",
+        "clr:AchievementSubject"
+      ],
+      [
+        "?courses",
+        "clr:achievementType",
+        "Course"
+      ],
+      [
+        "?degrees",
+        "clr:achievementType",
+        "Degree"
+      ]
+    ]
+  }
+}

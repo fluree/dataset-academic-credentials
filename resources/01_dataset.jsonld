@@ -1,15 +1,12 @@
 {
-  "ledger": "fluree-jld/369435906932746",
+  "ledger": "academic-credentials-dataset",
   "txn": {
-    "@context": {
-      "clr": "https://purl.imsglobal.org/spec/vc/ob/vocab.html#",
-      "acd": "https://academic-credential-dataset.net/ns/"
-    },
+    "@context": {},
     "@graph": [
       {
         "id": "acd:achievements/MAT117",
         "type": "clr:Achievement",
-        "clr:achievementType": "schema:Course",
+        "clr:achievementType": "Course",
         "clr:creditsAvailable": 3.0,
         "clr:humanCode": "MAT 117",
         "clr:name": "College Algebra",
@@ -18,7 +15,7 @@
       {
         "id": "acd:achievements/ENG101",
         "type": "clr:Achievement",
-        "clr:achievementType": "schema:Course",
+        "clr:achievementType": "Course",
         "clr:creditsAvailable": 3.0,
         "clr:humanCode": "ENG 101",
         "clr:name": "First-Year Composition",
@@ -27,7 +24,7 @@
       {
         "id": "acd:achievements/BIO100",
         "type": "clr:Achievement",
-        "clr:achievementType": "schema:Course",
+        "clr:achievementType": "Course",
         "clr:creditsAvailable": 4.0,
         "clr:humanCode": "BIO 100",
         "clr:name": "The Living World",
@@ -36,7 +33,7 @@
       {
         "id": "acd:achievements/ECN211",
         "type": "clr:Achievement",
-        "clr:achievementType": "schema:Course",
+        "clr:achievementType": "Course",
         "clr:creditsAvailable": 4.0,
         "clr:humanCode": "ECN 211",
         "clr:name": "Macroeconomic Principles",
@@ -45,7 +42,7 @@
       {
         "id": "acd:achievements/SPA101",
         "type": "clr:Achievement",
-        "clr:achievementType": "schema:Course",
+        "clr:achievementType": "Course",
         "clr:creditsAvailable": 4.0,
         "clr:humanCode": "SPA 101",
         "clr:name": "Elementary Spanish I",

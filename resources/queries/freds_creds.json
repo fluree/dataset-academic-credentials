@@ -1,0 +1,19 @@
+{
+  "ledger": "academic-credentials-dataset",
+  "query": {
+    "select": {
+      "?fredsCreds": [
+        "*"
+      ]
+    },
+    "where": [
+      [
+        "?fredsCreds",
+        "acd:learner",
+        {
+          "@id": "acd:learners/freddyyeti1"
+        }
+      ]
+    ]
+  }
+}
