@@ -67,6 +67,14 @@ expected result:
   }
 ]
 ```
+Here's a nice graph of these results:
+```mermaid
+graph LR
+    mm(1) -->|is named| Mothman
+    mm -->|lives in| wv
+    wv(2) -->|is named| wvn(West Virginia)
+    mm -->|first sighted on| d(November 12, 1966)
+```
 ---
 ### What's in the box?
 The /resources folder contains JSON files, each of which contains the data that will be sent as transactions to the Fluree ledger you'd like to populate.
