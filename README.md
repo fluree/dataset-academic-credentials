@@ -70,21 +70,21 @@ expected result:
 Here's a nice graph of these results:
 ```mermaid
 classDiagram
-acd:credentials/1 : type "clr:Profile"
-acd:credentials/1 : clr:activityStartDate 2022-08-10
-acd:credentials/1 : clr:activityEndDate 2023-05-14
-acd:credentials/1 : clr:creditsEarned 3
+A{acd:credentials/1} : type "clr:Profile"
+A{acd:credentials/1} : clr:activityStartDate 2022-08-10
+A{acd:credentials/1} : clr:activityEndDate 2023-05-14
+A{acd:credentials/1} : clr:creditsEarned 3
 
-acd:achievements/MAT117 : type clr:Achievement
-acd:achievements/MAT117 : clr:achievementType "Course"
-acd:achievements/MAT117 : clr:creditsAvailable 3
-acd:achievements/MAT117 : humanCode "MAT 117"
-acd:achievements/MAT117 : name "College Algebra"
-acd:achievements/MAT117 : description "Linear functions, quad..."
+B{acd:achievements/MAT117} : type clr:Achievement
+B{acd:achievements/MAT117} : clr:achievementType "Course"
+B{acd:achievements/MAT117} : clr:creditsAvailable 3
+B{acd:achievements/MAT117} : humanCode "MAT 117"
+B{acd:achievements/MAT117} : name "College Algebra"
+B{acd:achievements/MAT117} : description "Linear functions, quad..."
 
-acd:achievements/MAT117 <-- acd:credentials/1 : clr:achievement
-acd:institutions/wssu <-- acd:credentials/1 : clr:source
-acd:learner <-- acd:learners/freddyyeti1
+B <-- A : clr:achievement
+C{acd:institutions/wssu} <-- A : clr:source
+D{acd:learners/freddyyeti1} <-- A : acd:learner
 ```
 ---
 ### What's in the box?
