@@ -69,11 +69,22 @@ expected result:
 ```
 Here's a nice graph of these results:
 ```mermaid
-graph LR
-    mm(1) -->|is named| Mothman
-    mm -->|lives in| wv
-    wv(2) -->|is named| wvn(West Virginia)
-    mm -->|first sighted on| d(November 12, 1966)
+classDiagram
+acd:credentials/1 : type "clr:Profile"
+acd:credentials/1 : clr:activityStartDate 2022-08-10
+acd:credentials/1 : clr:activityEndDate 2023-05-14
+acd:credentials/1 : clr:creditsEarned 3
+
+acd:achievements/MAT117 : type clr:Achievement
+acd:achievements/MAT117 : clr:achievementType "Course"
+acd:achievements/MAT117 : clr:creditsAvailable 3
+acd:achievements/MAT117 : humanCode "MAT 117"
+acd:achievements/MAT117 : name "College Algebra"
+acd:achievements/MAT117 : description "Linear functions, quad..."
+
+acd:achievements/MAT117 <-- acd:credentials/1 : clr:achievement
+acd:institutions/wssu <-- acd:credentials/1 : clr:source
+acd:learner <-- acd:learners/freddyyeti1
 ```
 ---
 ### What's in the box?
