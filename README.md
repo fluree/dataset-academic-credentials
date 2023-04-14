@@ -4,19 +4,31 @@ This is a demo dataset that describes a fictional ecosystem of Academic Credenti
 
 This dataset uses JSON-LD and a Context Map to represent the data as a semantic graph. This just means that some data objects will point to other data objects and some of the object properties and values are namespaced with IRIs so that they can be understood in any context.
 
+```mermaid
+graph LR
+  mm(Mothman) -->|lives in| wv(West Virginia)
+  mm -->|first sighted on| d(November 12, 1966)
+```
+
 In general, Fluree sends JSON responses. You can pretty-print these with the [jq](https://www.baeldung.com/linux/jq-command-json) command-line utility by appending `| jq` to the commands below.
 
 ___
 
 ### Load the ACD into Fluree
-1. First, you'll need [a running instance of Fluree](https://next.developers.flur.ee/docs/learn/tutorial/introduction/#running-fluree).
-2. Now that we have a Fluree instance, let's create a new ledger for our dataset. We'll send the transaction in [resources/00_create_ledger.jsonld](resources/00_create_ledger.jsonld) to the `/fluree/create` endpoint with the following curl command. You should receive a `201 Created` in response.
+1. First, we'll need [a running instance of Fluree](https://next.developers.flur.ee/docs/learn/tutorial/introduction/#running-fluree).
+
+2. We'll also want to clone this repo and change into its directory.
+```sh
+  git clone https://github.com/fluree/dataset-academic-credentials.git && cd ./dataset-academic-credentials
+```
+
+3. Now that we have a Fluree instance and the dataset, let's create a new ledger for our dataset. We'll send the transaction in [resources/00_create_ledger.jsonld](resources/00_create_ledger.jsonld) to the `/fluree/create` endpoint with the following curl command. You should receive a `201 Created` in response.
 
 ```sh
 curl -H "Content-Type:application/json" --data "@resources/00_create_ledger.jsonld" localhost:58090/fluree/create
 ```
 
-3. Last thing to do is transact our dataset into our fresh ledger. We'll send [resources/01_dataset.jsonld](resources/01_dataset.jsonld) in a  POST to the `/fluree/transact` endpoint.
+4. Last thing to do is transact our dataset into our fresh ledger. We'll send [resources/01_dataset.jsonld](resources/01_dataset.jsonld) in a  POST to the `/fluree/transact` endpoint.
 
 ```sh
 curl -H "Content-Type:application/json" --data "@resources/01_dataset.jsonld" localhost:58090/fluree/transact
@@ -90,29 +102,7 @@ expected result:
   }
 ]
 ```
-<<<<<<< HEAD
-Here's a nice graph of these results:
-```mermaid
-classDiagram
-A{acd:credentials/1} : type "clr:Profile"
-A{acd:credentials/1} : clr:activityStartDate 2022-08-10
-A{acd:credentials/1} : clr:activityEndDate 2023-05-14
-A{acd:credentials/1} : clr:creditsEarned 3
 
-B{acd:achievements/MAT117} : type clr:Achievement
-B{acd:achievements/MAT117} : clr:achievementType "Course"
-B{acd:achievements/MAT117} : clr:creditsAvailable 3
-B{acd:achievements/MAT117} : humanCode "MAT 117"
-B{acd:achievements/MAT117} : name "College Algebra"
-B{acd:achievements/MAT117} : description "Linear functions, quad..."
-
-B <-- A : clr:achievement
-C{acd:institutions/wssu} <-- A : clr:source
-D{acd:learners/freddyyeti1} <-- A : acd:learner
-```
-=======
-
->>>>>>> main
 ---
 ### What's in the box?
 
