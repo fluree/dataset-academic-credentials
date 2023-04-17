@@ -10,36 +10,16 @@
       "(count ?degrees)"
     ],
     "where": [
-      [
-        "?learners",
-        "acd:profileType",
-        "Learner"
-      ],
-      [
-        "?institutions",
-        "acd:profileType",
-        "Institution"
-      ],
-      [
-        "?employers",
-        "acd:profileType",
-        "Employer"
-      ],
-      [
-        "?achievements",
-        "type",
-        "clr:AchievementSubject"
-      ],
-      [
-        "?courses",
-        "clr:achievementType",
-        "Course"
-      ],
-      [
-        "?degrees",
-        "clr:achievementType",
-        "Degree"
-      ]
+      {
+        "optional": [
+          ["?learners", "acd:profileType", "Learner"],
+          ["?institutions", "acd:profileType", "Institution"],
+          ["?employers", "acd:profileType", "Employer"],
+          ["?achievements", "type", "clr:AchievementSubject"],
+          ["?courses", "clr:achievementType", "Course"],
+          ["?degrees", "clr:achievementType", "Degree"]
+        ]
+      }
     ]
   }
 }
