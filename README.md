@@ -113,3 +113,10 @@ And here are a few additional important concepts featured in this dataset:
 - __Result__: The outcome of an academic achievement for a particular Learner. This could be a letter grade, a percentage score, a Pass or Fail, etc. A Result may also capture other metadata about a particular Learner's achievement such as dates of enrollment, instructor, commendations, etc.
 ___
 
+#### Use Cases
+
+This dataset supports the following use cases:
+
+1. A Learner that has earned academic achievements from multiple Institutions would like to aggregate them all and export to a standard format in order to apply for a job.
+2. An Institution would like to analyze the demographics and GPAs of Learners that have achieved a Mathematics degree since it's inception so that a baseline trend can be established for comparing outcomes of future accessibility and inclusivity efforts.
+3. An Employer would like to request the Institutions that issued a specific set of academic credentials to prove the credentials are valid and belong to the Learner that is applying for a job with the Employer.
