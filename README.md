@@ -16,20 +16,24 @@ In general, Fluree sends JSON responses. You can pretty-print these with the [jq
 ___
 
 ### Load the ACD into Fluree
-1. First, we'll need [a running instance of Fluree](https://next.developers.flur.ee/docs/learn/tutorial/introduction/#running-fluree).
+#### 1. Run Fluree
+First, we'll need [a running instance of Fluree](https://next.developers.flur.ee/docs/learn/tutorial/introduction/#running-fluree).
 
-2. We'll also want to clone this repo and change into its directory.
+#### 2. Clone ACD Repo
+We'll also want to clone this repo and change into its directory.
 ```sh
   git clone https://github.com/fluree/dataset-academic-credentials.git && cd ./dataset-academic-credentials
 ```
 
-3. Now that we have a Fluree instance and the dataset, let's create a new ledger for our dataset. We'll send the transaction in [resources/00_create_ledger.jsonld](resources/00_create_ledger.jsonld) to the `/fluree/create` endpoint with the following curl command. You should receive a `201 Created` in response.
+#### 3. Create Ledger
+Now that we have a Fluree instance and the dataset, let's create a new ledger for our dataset. We'll send the transaction in [resources/00_create_ledger.jsonld](resources/00_create_ledger.jsonld) to the `/fluree/create` endpoint with the following curl command. You should receive a `201 Created` in response.
 
 ```sh
 curl -H "Content-Type:application/json" --data "@resources/00_create_ledger.jsonld" localhost:58090/fluree/create
 ```
 
-4. Last thing to do is transact our dataset into our fresh ledger. We'll send [resources/01_dataset.jsonld](resources/01_dataset.jsonld) in a  POST to the `/fluree/transact` endpoint.
+#### 4. Transact Data
+Last thing to do is transact our dataset into our fresh ledger. We'll send [resources/01_dataset.jsonld](resources/01_dataset.jsonld) in a  POST to the `/fluree/transact` endpoint.
 
 ```sh
 curl -H "Content-Type:application/json" --data "@resources/01_dataset.jsonld" localhost:58090/fluree/transact
@@ -45,11 +49,11 @@ Here are some queries you can send to confirm you haven't missed anything. We ne
 curl -H "Content-Type:application/json" --data "@resources/queries/summary_stats.json" localhost:58090/fluree/query
 ``` 
 
-  expected result (3 Learners, 3 Institutions, 2 Employers, 1 Achievement, 4 Courses, and 0 Degrees):
+  expected result (3 Learners, 3 Institutions, 2 Employers, 1 Achievement, 5 Courses, and 0 Degrees):
 
 
 ```json
-[[3,3,2,1,4,0]]
+[[3,3,2,1,5,0]]
 ```
 
 2. Find Freddy with [resources/queries/find_freddy.json](resources/queries/find_freddy.json)
@@ -64,14 +68,14 @@ expected result:
 [
   {
     "id": "acd:learners/freddyyeti1",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "rdf:type": [
       "clr:Profile"
     ],
-    "acd:profileType": "Learner",
-    "clr:dateOfBirth": "2016-11-24",
     "schema:email": "freddyyeti1@asu.edu",
     "schema:familyName": "Yeti",
-    "schema:givenName": "Freddy"
+    "schema:givenName": "Freddy",
+    "acd:profileType": "Learner",
+    "clr:dateOfBirth": "2016-11-24"
   }
 ]
 ```
@@ -88,7 +92,7 @@ expected result:
 [
   {
     "id": "acd:credentials/1",
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
+    "rdf:type": [
       "clr:AchievementSubject"
     ],
     "acd:learner": {

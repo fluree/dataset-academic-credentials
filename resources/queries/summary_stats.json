@@ -11,14 +11,22 @@
     ],
     "where": [
       {
-        "optional": [
-          ["?learners", "acd:profileType", "Learner"],
-          ["?institutions", "acd:profileType", "Institution"],
-          ["?employers", "acd:profileType", "Employer"],
-          ["?achievements", "type", "clr:AchievementSubject"],
-          ["?courses", "clr:achievementType", "Course"],
-          ["?degrees", "clr:achievementType", "Degree"]
-        ]
+        "optional": [["?learners", "acd:profileType", "Learner"]]
+      },
+      {
+        "optional": [["?institutions", "acd:profileType", "Institution"]]
+      },
+      {
+        "optional": [["?employers", "acd:profileType", "Employer"]]
+      },
+      {
+        "optional": [["?achievements", "type", "clr:AchievementSubject"]]
+      },
+      {
+        "optional": [["?courses", "clr:achievementType", "Course"]]
+      },
+      {
+        "optional": [["?degrees", "clr:achievementType", "Degree"]]
       }
     ]
   }
