@@ -35,11 +35,24 @@ curl -H "Content-Type:application/json" --data "@resources/00_create_ledger.json
 ```
 
 #### 4. Transact Data
-Last thing to do is transact our dataset into our fresh ledger. We'll send [resources/01_dataset.jsonld](resources/01_dataset.jsonld) in a  POST to the `/fluree/transact` endpoint.
+Last thing to do is transact our dataset into our fresh ledger. 
+We'll send the other jsonld files one at a time in a POST to the `/fluree/transact` endpoint.
 
+[resources/01_profiles.jsonld](resources/01_profiles.jsonld)
 ```sh
-curl -H "Content-Type:application/json" --data "@resources/01_dataset.jsonld" localhost:58090/fluree/transact
+curl -H "Content-Type:application/json" --data "@resources/01_profiles.jsonld" localhost:58090/fluree/transact
 ```
+
+[resources/02_achievements.jsonld](resources/02_achievements.jsonld)
+```sh
+curl -H "Content-Type:application/json" --data "@resources/02_achievements.jsonld" localhost:58090/fluree/transact
+```
+
+[resources/03_credentials.jsonld](resources/03_credentials.jsonld)
+```sh
+curl -H "Content-Type:application/json" --data "@resources/03_credentials.jsonld" localhost:58090/fluree/transact
+```
+
 
 ### Ready to roll!
 
@@ -55,7 +68,7 @@ curl -H "Content-Type:application/json" --data "@resources/queries/summary_stats
 
 
 ```json
-[[3,3,2,1,5,0]]
+[[3,4,2,39,43,0]]
 ```
 
 2. Find Freddy with [resources/queries/find_freddy.json](resources/queries/find_freddy.json)

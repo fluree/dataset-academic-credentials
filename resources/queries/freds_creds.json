@@ -2,16 +2,14 @@
   "ledger": "academic-credentials-dataset",
   "query": {
     "select": {
-      "?fredsCreds": [
-        "*"
-      ]
+      "?fredsCreds": ["*"]
     },
     "where": [
       [
         "?fredsCreds",
-        "acd:learner",
+        "acd:recipient",
         {
-          "@id": "acd:learners/freddyyeti1"
+          "id": "acd:learners/freddyyeti1"
         }
       ]
     ]
