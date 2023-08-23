@@ -4,70 +4,11 @@
     "@context": {},
     "@graph": [
       {
-        "id": "acd:learners/freddyyeti1",
-        "type": "clr:Profile",
-        "schema:givenName": "Freddy",
-        "schema:familyName": "Yeti",
-        "schema:email": "freddyyeti1@asu.edu",
-        "clr:dateOfBirth": "2016-11-24",
-        "acd:profileType": "Learner"
-      },
-      {
-        "id": "acd:learners/lucialong3",
-        "type": "clr:Profile",
-        "schema:givenName": "Lucia",
-        "schema:familyName": "Long",
-        "schema:email": "lucialong3@asu.edu",
-        "clr:dateOfBirth": "2023-01-30",
-        "acd:profileType": "Learner"
-      },
-      {
-        "id": "acd:learners/nessieelasmo1",
-        "type": "clr:Profile",
-        "schema:givenName": "Nessie",
-        "schema:familyName": "Elasmosauridae",
-        "schema:email": "nessieelasmo1@asu.edu",
-        "clr:dateOfBirth": "564-08-22",
-        "acd:profileType": "Learner"
-      },
-      {
-        "id": "acd:institutions/wssu",
-        "type": "clr:Profile",
-        "schema:name": "Winston-Salem State University",
-        "schema:url": "https://wssu.edu/",
-        "acd:profileType": "Institution"
-      },
-      {
-        "id": "acd:institutions/wfu",
-        "type": "clr:Profile",
-        "schema:name": "Wake Forest University",
-        "schema:url": "https://www.wfu.edu/",
-        "acd:profileType": "Institution"
-      },
-      {
-        "id": "acd:institutions/ftcc",
-        "type": "clr:Profile",
-        "schema:name": "Forsyth Tech Community College",
-        "schema:url": "https://forsythtech.edu/",
-        "acd:profileType": "Institution"
-      },
-      {
-        "id": "acd:employers/volvogroup",
-        "type": "clr:Profile",
-        "schema:name": "Volvo Group",
-        "schema:url": "https://www.volvogroup.com/",
-        "acd:profileType": "Employer"
-      },
-      {
-        "id": "acd:employers/hondajet",
-        "type": "clr:Profile",
-        "schema:name": "Honda Aircraft Company",
-        "schema:url": "https://www.hondajet.com/",
-        "acd:profileType": "Employer"
-      },
-      {
-        "id": "acd:achievements/MAT117",
+        "id": "acd:achievements/FU/MAT117",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/fu"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "MAT 117",
@@ -75,8 +16,11 @@
         "clr:description": "Linear functions, quadratic functions, general polynomial functions, rational functions, systems of linear equations, logarithmic and exponential functions."
       },
       {
-        "id": "acd:achievements/ENG101",
+        "id": "acd:achievements/FU/ENG101",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/fu"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "ENG 101",
@@ -84,8 +28,11 @@
         "clr:description": "Discovers, organizes and develops ideas in relation to the writer's purpose, subject and audience. Emphasizes modes of written discourse and effective use of rhetorical principles."
       },
       {
-        "id": "acd:achievements/BIO100",
+        "id": "acd:achievements/FU/BIO100",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/fu"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 4,
         "clr:humanCode": "BIO 100",
@@ -93,8 +40,11 @@
         "clr:description": "Principles of biology. Cannot be used for major credit in the biological sciences."
       },
       {
-        "id": "acd:achievements/ECN211",
+        "id": "acd:achievements/FU/ECN211",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/fu"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 4,
         "clr:humanCode": "ECN 211",
@@ -102,8 +52,11 @@
         "clr:description": "Introductory course in macroeconomics. Topics include the measurement and modeling of output, national income, inflation and unemployment; the determinants of cross-country differences in income; the functions of money and the banking system; the causes of and policy responses to recessions; the effect of monetary and fiscal policy on interest rates and national income."
       },
       {
-        "id": "acd:achievements/SPA101",
+        "id": "acd:achievements/FU/SPA101",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/fu"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 4,
         "clr:humanCode": "SPA 101",
@@ -113,6 +66,9 @@
       {
         "id": "acd:achievements/UNCC/CHEM1251",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CHEM 1251",
@@ -122,6 +78,9 @@
       {
         "id": "acd:achievements/UNCC/CHEM1251L",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 1,
         "clr:humanCode": "CHEM 1251L",
@@ -131,6 +90,9 @@
       {
         "id": "acd:achievements/UNCC/MATH1241",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "MATH 1241",
@@ -140,6 +102,9 @@
       {
         "id": "acd:achievements/UNCC/MATH1242",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "MATH 1242",
@@ -149,6 +114,9 @@
       {
         "id": "acd:achievements/UNCC/MATH2171",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "MATH 2171",
@@ -158,6 +126,9 @@
       {
         "id": "acd:achievements/UNCC/MATH2241",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "MATH 2241",
@@ -167,6 +138,9 @@
       {
         "id": "acd:achievements/UNCC/PHYS2101",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "PHYS 2101",
@@ -176,6 +150,9 @@
       {
         "id": "acd:achievements/UNCC/PHYS2101L",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 1,
         "clr:humanCode": "PHYS 2101L",
@@ -185,6 +162,9 @@
       {
         "id": "acd:achievements/UNCC/PHYS2102",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "PHYS 2102",
@@ -194,6 +174,9 @@
       {
         "id": "acd:achievements/UNCC/PHYS2102L",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 1,
         "clr:humanCode": "PHYS 2102L",
@@ -203,6 +186,9 @@
       {
         "id": "acd:achievements/UNCC/STAT3128",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "STAT 3128",
@@ -212,6 +198,9 @@
       {
         "id": "acd:achievements/UNCC/GEOL1200",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "GEOL 1200",
@@ -221,6 +210,9 @@
       {
         "id": "acd:achievements/UNCC/ENGR1201",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 2,
         "clr:humanCode": "ENGR 1201",
@@ -230,6 +222,9 @@
       {
         "id": "acd:achievements/UNCC/ENGR1202",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 2,
         "clr:humanCode": "ENGR 1202",
@@ -239,6 +234,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR2102",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 2102",
@@ -248,6 +246,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR2103",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 2103",
@@ -257,6 +258,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR2154",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 2,
         "clr:humanCode": "CEGR 2154",
@@ -266,6 +270,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3111",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 3111",
@@ -275,6 +282,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3122",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 3122",
@@ -284,6 +294,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3141",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 3141",
@@ -293,6 +306,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3143",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 3143",
@@ -302,6 +318,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3153",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 2,
         "clr:humanCode": "CEGR 3153",
@@ -311,6 +330,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3155",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 2,
         "clr:humanCode": "CEGR 3155",
@@ -320,6 +342,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3161",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 3161",
@@ -329,6 +354,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3201",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 3201",
@@ -338,6 +366,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3255",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 2,
         "clr:humanCode": "CEGR 3255",
@@ -347,6 +378,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3258",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 2,
         "clr:humanCode": "CEGR 3258",
@@ -356,6 +390,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3278",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 3278",
@@ -365,6 +402,9 @@
       {
         "id": "acd:achievements/UNCC/ENGR3295",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 1,
         "clr:humanCode": "ENGR 3295",
@@ -374,6 +414,9 @@
       {
         "id": "acd:achievements/UNCC/MEGR2141",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "MEGR 2141",
@@ -383,6 +426,9 @@
       {
         "id": "acd:achievements/UNCC/MEGR2144",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "MEGR 2144",
@@ -392,6 +438,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR4161",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 4161",
@@ -401,6 +450,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR4270",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 4270",
@@ -410,6 +462,9 @@
       {
         "id": "acd:achievements/UNCC/MEGR3121",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "MEGR 3121",
@@ -419,6 +474,9 @@
       {
         "id": "acd:achievements/UNCC/CEGR3225",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "CEGR 3225",
@@ -428,6 +486,9 @@
       {
         "id": "acd:achievements/UNCC/GEOL3130",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 4,
         "clr:humanCode": "GEOL 3130",
@@ -437,6 +498,9 @@
       {
         "id": "acd:achievements/UNCC/GEOG3115",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "GEOG 3115",
@@ -446,632 +510,14 @@
       {
         "id": "acd:achievements/UNCC/GEOG4160",
         "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
         "clr:achievementType": "Course",
         "clr:creditsAvailable": 3,
         "clr:humanCode": "GEOG 4160",
         "clr:name": "The Geography of Transportation Systems",
         "clr:description": "The Geography of Transportation Systems course explores the relationship between geography and transportation, including spatial patterns of transportation networks, logistics, global supply chains, and the impact on the economy and society."
-      },
-      {
-        "id": "acd:credentials/1",
-        "type": "clr:AchievementSubject",
-        "clr:achievement": {
-          "id": "acd:achievements/MAT117"
-        },
-        "clr:source": {
-          "id": "acd:institutions/wssu"
-        },
-        "acd:learner": {
-          "id": "acd:learners/freddyyeti1"
-        }
-      },
-      {
-        "id": "acd:credentials/2",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CHEM1251"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/3",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CHEM1251L"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/4",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/MATH1241"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/5",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/MATH1242"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/6",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/MATH2171"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/7",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/MATH2241"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/8",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/PHYS2101"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/9",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/PHYS2101L"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/10",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/PHYS2102"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/11",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/PHYS2102L"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/12",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/STAT3128"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/13",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/GEOL1200"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/14",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/ENGR1201"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/15",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/ENGR1202"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/16",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR2102"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/17",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR2103"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/18",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR2154"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/19",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3111"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/20",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3122"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/21",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3141"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/22",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3143"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/23",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3153"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/24",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3155"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/25",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3161"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/26",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3201"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/27",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3255"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/28",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3258"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/29",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3278"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/30",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/ENGR3295"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/31",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/MEGR2141"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/32",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/MEGR2144"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/33",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR4161"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/34",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR4270"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/35",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/MEGR3121"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/36",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/CEGR3225"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/37",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/GEOL3130"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/38",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/GEOG3115"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
-      },
-      {
-        "id": "acd:credentials/39",
-        "type": [
-          "clr:AchievementSubject",
-          "acd:credential"
-        ],
-        "clr:achievement": {
-          "id": "acd:achievements/UNCC/GEOG4160"
-        },
-        "clr:source": {
-          "id": "acd:institutions/uncc"
-        },
-        "acd:learner": {
-          "id": "acd:learners/lucialong3"
-        }
       }
     ]
   }

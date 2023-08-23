@@ -6,9 +6,11 @@ This dataset uses JSON-LD and a Context Map to represent the data as a semantic 
 
 ```mermaid
 graph LR
-  as(AchievementSubject) -->|achievement| a(Achievement)
-  as -->|source| inst(Institution)
-  as -->|learner| l(Learner)
+  as(Assertion) -->|recipient| r(Learner)
+  as -->|achievement| ac(Achievement)
+  ac -->|creator| inst(Institution)
+  c(Credential) -->|credentialSubject| as
+  c -->|issuer| inst
 ```
 
 In general, Fluree sends JSON responses. You can pretty-print these with the [jq](https://www.baeldung.com/linux/jq-command-json) command-line utility by appending `| jq` to the commands below.
