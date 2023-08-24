@@ -108,16 +108,17 @@ expected result:
   {
     "id": "acd:credentials/1",
     "rdf:type": [
-      "clr:AchievementSubject"
+      "acd:Credential",
+      "clr:AchievementCredential",
+      "VerifiableCredential"
     ],
-    "acd:learner": {
-      "id": "acd:learners/freddyyeti1"
-    },
-    "clr:achievement": {
-      "id": "acd:achievements/MAT117"
-    },
-    "clr:source": {
+    "clr:name": "Recognition of Course Completion",
+    "clr:issuanceDate": "2023-08-10",
+    "clr:issuer": {
       "id": "acd:institutions/wssu"
+    },
+    "clr:credentialSubject": {
+      "id": "acd:assertions/1"
     }
   }
 ]

@@ -6,11 +6,16 @@
     },
     "where": [
       [
-        "?fredsCreds",
+        "?fredsAssertions",
         "acd:recipient",
         {
           "id": "acd:learners/freddyyeti1"
         }
+      ],
+      [
+        "?fredsCreds",
+        "clr:credentialSubject",
+        "?fredsAssertions"
       ]
     ]
   }
