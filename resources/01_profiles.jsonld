@@ -73,13 +73,6 @@
         "acd:profileType": "Institution"
       },
       {
-        "id": "acd:institutions/pearsonvue",
-        "type": "clr:Profile",
-        "schema:name": "Pearson VUE",
-        "schema:url": "https://home.pearsonvue.com/",
-        "acd:profileType": "Institution"
-      },
-      {
         "id": "acd:institutions/ncsite",
         "type": "clr:Profile",
         "schema:name": "The North Carolina Section of the Institute of Transportation Engineers",
