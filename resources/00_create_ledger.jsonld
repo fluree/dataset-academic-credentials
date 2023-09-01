@@ -14,6 +14,7 @@
     "skos": "http://www.w3.org/2008/05/skos#",
     "wiki": "https://www.wikidata.org/wiki/",
     "f": "https://ns.flur.ee/ledger#",
+    "vc": "https://w3.org/2018/credentials#",
     "clr": "https://purl.imsglobal.org/spec/vc/ob/vocab.html#",
     "acd": "https://academic-credential-dataset.net/ns/"
   }

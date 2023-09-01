@@ -518,6 +518,266 @@
         "clr:humanCode": "GEOG 4160",
         "clr:name": "The Geography of Transportation Systems",
         "clr:description": "The Geography of Transportation Systems course explores the relationship between geography and transportation, including spatial patterns of transportation networks, logistics, global supply chains, and the impact on the economy and society."
+      },
+      {
+        "id": "acd:achievements/UNCC/BSCE",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/uncc"
+        },
+        "clr:achievementType": "Degree",
+        "clr:name": "Civil Engineering",
+        "clr:description": "Bachelor of Science in Civil Engineering"
+      },
+      {
+        "id": "acd:achievements/NCEES/exams/FE",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "Assessment",
+        "clr:name": "Fundementals of Engineering (FE) Exam",
+        "clr:description": "The FE exam is generally your first step in the process of becoming a licensed professional engineer (P.E.). It is designed for recent graduates and students who are close to finishing an undergraduate engineering degree from an EAC/ABET-accredited program. The FE exam includes 110 questions. The exam appointment time is 6 hours long."
+      },
+      {
+        "id": "acd:achievements/NCEES/exams/PE",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "Assessment",
+        "clr:name": "Principles and Practice of Engineering (PE) Exam",
+        "clr:description": "The PE exam tests for a minimum level of competency in a particular engineering discipline. It is designed for engineers who have gained a minimum of four years post-college work experience in their chosen engineering discipline. The exam includes 80 questions. The exam appointment time is 9 hours."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/Civil",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Civil Engineering License",
+        "clr:description": "Entitlement to practice Civil Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/AgriculturalAndBiological",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Agricultural and Biological Engineering License",
+        "clr:description": "Entitlement to practice Agricultural and Biological Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/Architectural",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Architectural Engineering License",
+        "clr:description": "Entitlement to practice Architectural Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/Chemical",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Chemical Engineering License",
+        "clr:description": "Entitlement to practice Chemical Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/ControlSystems",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Control Systems Engineering License",
+        "clr:description": "Entitlement to practice Control Systems Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/ElectricalAndComputer",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Electrical and Computer Engineering License",
+        "clr:description": "Entitlement to practice Electrical and Computer Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/Environmental",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Environmental Engineering License",
+        "clr:description": "Entitlement to practice Environmental Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/FireProtection",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Fire Protection Engineering License",
+        "clr:description": "Entitlement to practice Fire Protection Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/Industrial",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Industrial Engineering License",
+        "clr:description": "Entitlement to practice Industrial and Systems Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/Mechanical",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Mechanical Engineering License",
+        "clr:description": "Entitlement to practice Mechanical Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/Nuclear",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Nuclear Engineering License",
+        "clr:description": "Entitlement to practice Nuclear Engineering."
+      },
+      {
+        "id": "acd:achievements/NCEES/licensure/Structural",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncees"
+        },
+        "clr:achievementType": "License",
+        "clr:name": "Structural Engineering License",
+        "clr:description": "Entitlement to practice Structural Engineering."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/contributiontotransportation",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "Contribution to Transportation Award",
+        "clr:description": "The NCSITE (North Carolina Section of the Institute of Transportation Engineers) Contribution to Transportation Award recognizes individuals or organizations that have made significant and impactful contributions to the field of transportation in North Carolina. This prestigious award honors those who have demonstrated outstanding dedication, leadership, and innovation in improving the transportation infrastructure, safety, and mobility within the state, ultimately enhancing the quality of life for its residents."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/professionalimage",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "Robert J. Dodge Professional Image Award",
+        "clr:description": "The Robert J. Dodge Professional Image Award is presented to an individual who exemplifies the highest standards of professionalism within the field of transportation. This award recognizes those who consistently demonstrate integrity, ethics, and a commitment to promoting a positive image of the transportation industry."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/lifetimeservice",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "R.V. Moss Lifetime Service Award",
+        "clr:description": "The R.V. Moss Lifetime Service Award is bestowed upon an individual who has dedicated a significant portion of their career to the transportation profession. It acknowledges a lifetime of service, leadership, and contributions that have left a lasting impact on the transportation community in North Carolina."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/trailblazer",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "Emily Blount Trailblazer Award",
+        "clr:description": "The Emily Blount Trailblazer Award recognizes a visionary individual who has broken new ground and pioneered innovative solutions in the transportation industry. This award celebrates those who have boldly charted new paths and inspired positive change in the field."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/technicalexcellence",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "Jay Quinn Technical Excellence Award",
+        "clr:description": "The Jay Quinn Technical Excellence Award honors an individual or team that has exhibited exceptional technical prowess and expertise in transportation-related projects or initiatives. It highlights outstanding technical achievements that have advanced the field."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/presidents",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "President's Award",
+        "clr:description": "The President's Award is presented at the discretion of the NCSITE President to an individual or group who has made a significant impact on the organization during the President's term. It recognizes extraordinary contributions to the success and mission of NCSITE."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/youngprofessional",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "Todd Delk Young Professional Award",
+        "clr:description": "The Todd Delk Young Professional Award celebrates the accomplishments and potential of a young transportation professional who has shown exceptional promise and dedication early in their career. It highlights the next generation of leaders in the field."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/newmember",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "New Member Award",
+        "clr:description": "The New Member Award acknowledges and encourages the active involvement of new members within NCSITE. It recognizes the enthusiasm, participation, and contributions of individuals who have recently joined the organization."
+      },
+      {
+        "id": "acd:achievements/NCSITE/awards/outstandingproject",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ncsite"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "Outstanding Project Award",
+        "clr:description": "The Outstanding Project Award is presented to a transportation-related project that stands out for its excellence, innovation, and positive impact on the community. This award highlights projects that have demonstrated exceptional planning, design, and execution."
+      },
+      {
+        "id": "acd:achievements/ASCE/awards/ocea",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/asce"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "Outstanding Civil Engineering Achievement",
+        "clr:description": "Established in 1960, this prestigious ASCE award honors the project that best illustrates superior civil engineering skills and represents a significant contribution to civil engineering progress and society. Honoring an overall project rather than an individual, the award celebrates the contributions of many engineers."
+      },
+      {
+        "id": "acd:achievements/ASCENC/awards/ceoftheyear",
+        "type": "clr:Achievement",
+        "clr:creator": {
+          "id": "acd:institutions/ascenc"
+        },
+        "clr:achievementType": "Award",
+        "clr:name": "Civil Engineer of the Year Award",
+        "clr:description": "The Civil Engineer of the Year Award recognizes those who showed excellence in civil engineering in the state of North Carolina."
       }
     ]
   }

@@ -59,6 +59,48 @@
         "acd:profileType": "Institution"
       },
       {
+        "id": "acd:institutions/ncees",
+        "type": "clr:Profile",
+        "schema:name": "National Council of Examiners for Engineering and Surveying",
+        "schema:url": "https://ncees.org/",
+        "acd:profileType": "Institution"
+      },
+      {
+        "id": "acd:institutions/pearsonvue",
+        "type": "clr:Profile",
+        "schema:name": "Pearson VUE",
+        "schema:url": "https://home.pearsonvue.com/",
+        "acd:profileType": "Institution"
+      },
+      {
+        "id": "acd:institutions/pearsonvue",
+        "type": "clr:Profile",
+        "schema:name": "Pearson VUE",
+        "schema:url": "https://home.pearsonvue.com/",
+        "acd:profileType": "Institution"
+      },
+      {
+        "id": "acd:institutions/ncsite",
+        "type": "clr:Profile",
+        "schema:name": "The North Carolina Section of the Institute of Transportation Engineers",
+        "schema:url": "https://ncsite.org/index.php",
+        "acd:profileType": "Institution"
+      },
+      {
+        "id": "acd:institutions/acse",
+        "type": "clr:Profile",
+        "schema:name": "The American Society of Civil Engineers",
+        "schema:url": "https://www.asce.org/",
+        "acd:profileType": "Institution"
+      },
+      {
+        "id": "acd:institutions/acsenc",
+        "type": "clr:Profile",
+        "schema:name": "North Carolina ASCE Section",
+        "schema:url": "https://www.ascenc.org/",
+        "acd:profileType": "Institution"
+      },
+      {
         "id": "acd:employers/volvogroup",
         "type": "clr:Profile",
         "schema:name": "Volvo Group",
