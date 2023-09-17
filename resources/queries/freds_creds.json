@@ -1,22 +1,14 @@
 {
-  "ledger": "academic-credentials-dataset",
-  "query": {
-    "select": {
-      "?fredsCreds": ["*"]
-    },
-    "where": [
-      [
-        "?fredsAssertions",
-        "acd:recipient",
-        {
-          "id": "acd:learners/freddyyeti1"
-        }
-      ],
-      [
-        "?fredsCreds",
-        "clr:credentialSubject",
-        "?fredsAssertions"
-      ]
-    ]
-  }
+  "from": "academic-credentials-dataset",
+  "select": { "?fredsCreds": ["*"] },
+  "where": [
+    [
+      "?fredsAssertions",
+      "acd:recipient",
+      {
+        "id": "acd:learners/freddyyeti1"
+      }
+    ],
+    ["?fredsCreds", "clr:credentialSubject", "?fredsAssertions"]
+  ]
 }

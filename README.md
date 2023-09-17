@@ -64,14 +64,14 @@ Here are some queries you can send to confirm you haven't missed anything. We ne
 curl -H "Content-Type:application/json" --data "@resources/queries/summary_stats.json" localhost:58090/fluree/query
 ``` 
 
-  expected result (3 Learners, 3 Institutions, 2 Employers, 1 Achievement, 5 Courses, and 0 Degrees):
+  expected result (3 Learners, 9 Institutions, 2 Employers, 46 Achievement, 43 Courses, 1 Degree, and 12 Licenses):
 
 
 ```json
-[[3,4,2,39,43,0]]
+[[3,9,2,46,43,1,12]]
 ```
 
-2. Find Freddy with [resources/queries/find_freddy.json](resources/queries/find_freddy.json)
+1. Find Freddy with [resources/queries/find_freddy.json](resources/queries/find_freddy.json)
 
 ```sh
 curl -H "Content-Type:application/json" --data "@resources/queries/find_freddy.json" localhost:58090/fluree/query
@@ -83,10 +83,8 @@ expected result:
 [
   {
     "id": "acd:learners/freddyyeti1",
-    "rdf:type": [
-      "clr:Profile"
-    ],
-    "schema:email": "freddyyeti1@asu.edu",
+    "type": "clr:Profile",
+    "schema:email": "freddyyeti1@fluree.edu",
     "schema:familyName": "Yeti",
     "schema:givenName": "Freddy",
     "acd:profileType": "Learner",
@@ -107,15 +105,15 @@ expected result:
 [
   {
     "id": "acd:credentials/1",
-    "rdf:type": [
+    "type": [
       "acd:Credential",
       "clr:AchievementCredential",
-      "VerifiableCredential"
+      "vc:VerifiableCredential"
     ],
     "clr:name": "Recognition of Course Completion",
-    "clr:issuanceDate": "2023-08-10",
+    "clr:issuanceDate": "2013-08-10",
     "clr:issuer": {
-      "id": "acd:institutions/wssu"
+      "id": "acd:institutions/fu"
     },
     "clr:credentialSubject": {
       "id": "acd:assertions/1"

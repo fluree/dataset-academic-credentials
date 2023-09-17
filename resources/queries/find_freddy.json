@@ -1,17 +1,9 @@
 {
-  "ledger": "academic-credentials-dataset",
-  "query": {
-    "select": {
-      "?s": [
-        "*"
-      ]
-    },
-    "where": [
-      [
-        "?s",
-        "schema:givenName",
-        "Freddy"
-      ]
-    ]
-  }
+  "from": "academic-credentials-dataset",
+  "select": {
+    "?s": ["*"]
+  },
+  "where": [
+    [ "?s", "schema:givenName", "Freddy" ]
+  ]
 }

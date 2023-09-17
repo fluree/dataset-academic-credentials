@@ -1,33 +1,35 @@
 {
-  "ledger": "academic-credentials-dataset",
-  "query": {
-    "select": [
-      "(count ?learners)",
-      "(count ?institutions)",
-      "(count ?employers)",
-      "(count ?achievements)",
-      "(count ?courses)",
-      "(count ?degrees)"
-    ],
-    "where": [
-      {
-        "optional": [["?learners", "acd:profileType", "Learner"]]
-      },
-      {
-        "optional": [["?institutions", "acd:profileType", "Institution"]]
-      },
-      {
-        "optional": [["?employers", "acd:profileType", "Employer"]]
-      },
-      {
-        "optional": [["?achievements", "type", "clr:AchievementSubject"]]
-      },
-      {
-        "optional": [["?courses", "clr:achievementType", "Course"]]
-      },
-      {
-        "optional": [["?degrees", "clr:achievementType", "Degree"]]
-      }
-    ]
-  }
+  "from": "academic-credentials-dataset",
+  "select": [
+    "(count ?learners)",
+    "(count ?institutions)",
+    "(count ?employers)",
+    "(count ?achievements)",
+    "(count ?courses)",
+    "(count ?degrees)",
+    "(count ?licenses)"
+  ],
+  "where": [
+    {
+      "optional": [["?learners", "acd:profileType", "Learner"]]
+    },
+    {
+      "optional": [["?institutions", "acd:profileType", "Institution"]]
+    },
+    {
+      "optional": [["?employers", "acd:profileType", "Employer"]]
+    },
+    {
+      "optional": [["?achievements", "type", "clr:AchievementSubject"]]
+    },
+    {
+      "optional": [["?courses", "clr:achievementType", "Course"]]
+    },
+    {
+      "optional": [["?degrees", "clr:achievementType", "Degree"]]
+    },
+    {
+      "optional": [["?licenses", "clr:achievementType", "License"]]
+    }
+  ]
 }
