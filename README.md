@@ -68,7 +68,7 @@ curl -H "Content-Type:application/json" --data "@resources/queries/summary_stats
 
 
 ```json
-[[3,9,2,46,43,1,12]]
+[[3,10,2,46,43,1,12]]
 ```
 
 1. Find Freddy with [resources/queries/find_freddy.json](resources/queries/find_freddy.json)
