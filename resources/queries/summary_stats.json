@@ -9,27 +9,35 @@
     "(count ?degrees)",
     "(count ?licenses)"
   ],
-  "where": [
-    {
-      "optional": [["?learners", "acd:profileType", "Learner"]]
-    },
-    {
-      "optional": [["?institutions", "acd:profileType", "Institution"]]
-    },
-    {
-      "optional": [["?employers", "acd:profileType", "Employer"]]
-    },
-    {
-      "optional": [["?achievements", "type", "clr:AchievementSubject"]]
-    },
-    {
-      "optional": [["?courses", "clr:achievementType", "Course"]]
-    },
-    {
-      "optional": [["?degrees", "clr:achievementType", "Degree"]]
-    },
-    {
-      "optional": [["?licenses", "clr:achievementType", "License"]]
-    }
-  ]
+  "where": [{
+    "union": [
+      [["?learners", "acd:profileType", "Learner"]],
+      [{
+        "union": [
+          [["?institutions", "acd:profileType", "Institution"]],
+          [{
+            "union": [
+              [["?employers", "acd:profileType", "Employer"]],
+              [{
+                "union": [
+                  [["?achievements", "type", "clr:AchievementSubject"]],
+                  [{
+                    "union": [
+                      [["?courses", "clr:achievementType", "Course"]],
+                      [{
+                        "union": [
+                          [["?degrees", "clr:achievementType", "Degree"]],
+                          [["?licenses", "clr:achievementType", "License"]]
+                        ]
+                      }]
+                    ]
+                  }]
+                ]
+              }]
+            ]
+          }]
+        ]
+      }]
+    ]
+  }]
 }

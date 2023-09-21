@@ -64,7 +64,7 @@ Here are some queries you can send to confirm you haven't missed anything. We ne
 curl -H "Content-Type:application/json" --data "@resources/queries/summary_stats.json" localhost:58090/fluree/query
 ``` 
 
-  expected result (3 Learners, 9 Institutions, 2 Employers, 46 Achievement, 43 Courses, 1 Degree, and 12 Licenses):
+  expected result (3 Learners, 10 Institutions, 2 Employers, 46 Achievements, 43 Courses, 1 Degree, and 12 Licenses):
 
 
 ```json
