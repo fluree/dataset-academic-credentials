@@ -85,14 +85,14 @@
       "acd:profileType": "Institution"
     },
     {
-      "id": "acd:institutions/acse",
+      "id": "acd:institutions/asce",
       "type": "clr:Profile",
       "schema:name": "The American Society of Civil Engineers",
       "schema:url": "https://www.asce.org/",
       "acd:profileType": "Institution"
     },
     {
-      "id": "acd:institutions/acsenc",
+      "id": "acd:institutions/ascenc",
       "type": "clr:Profile",
       "schema:name": "North Carolina ASCE Section",
       "schema:url": "https://www.ascenc.org/",
