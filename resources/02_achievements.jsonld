@@ -776,6 +776,26 @@
       "clr:achievementType": "Award",
       "clr:name": "Civil Engineer of the Year Award",
       "clr:description": "The Civil Engineer of the Year Award recognizes those who showed excellence in civil engineering in the state of North Carolina."
+    },
+    {
+      "id": "acd:achievements/ASCENC/awards/mostImprovedSportsmanship",
+      "type": "clr:Achievement",
+      "clr:creator": {
+        "id": "acd:institutions/ascenc"
+      },
+      "clr:achievementType": "Award",
+      "clr:name": "Most Improved Sportsmanship",
+      "clr:description": "The Most Improved Sportsmanship Award recognizes those who had such deplorably bad attitudes that by the end of the semester literally any positive energy was a HUGE improvement."
+    },
+    {
+      "id": "acd:achievements/ASCENC/awards/tiniestMouse",
+      "type": "clr:Achievement",
+      "clr:creator": {
+        "id": "acd:institutions/ascenc"
+      },
+      "clr:achievementType": "Award",
+      "clr:name": "Tiniest Mouse",
+      "clr:description": "The Tiniest Mouse Award recognizes those who were like SOOOOOOO incredibly cute and tiny when they shape shifted into a mouse! Extra points are given for having large curious eyes and a cute curly little tail."
     }
   ]
 }
