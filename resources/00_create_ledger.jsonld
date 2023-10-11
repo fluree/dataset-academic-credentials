@@ -1,9 +1,11 @@
 {
-  "ledger": "academic-credentials-dataset",
-  "txn": {
-    "message": "New ledger created"
-  },
-  "defaultContext": {
+  "f:ledger": "academic-credentials-dataset",
+  "@graph": [
+    {
+      "message": "New ledger created"
+    }
+  ],
+  "@context": {
     "id": "@id",
     "type": "@type",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
