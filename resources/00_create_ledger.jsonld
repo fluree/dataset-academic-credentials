@@ -1,11 +1,14 @@
 {
+  "@context": {
+    "f": "https://ns.flur.ee/ledger#"
+  },
   "f:ledger": "academic-credentials-dataset",
   "@graph": [
     {
       "message": "New ledger created"
     }
   ],
-  "@context": {
+  "f:defaultContext": {
     "id": "@id",
     "type": "@type",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
