@@ -7,37 +7,57 @@
     "(count ?achievements)",
     "(count ?courses)",
     "(count ?degrees)",
-    "(count ?licenses)"
+    "(count ?licenses)",
+    "(count ?awards)"
   ],
-  "where": [{
-    "union": [
-      [{
-        "union": [
-          [{
+  "where": [
+    {
+      "union": [
+        [
+          {
             "union": [
-              [["?learners", "acd:profileType", "Learner"]],
-              [["?institutions", "acd:profileType", "Institution"]]
+              [
+                {
+                  "union": [
+                    [["?learners", "acd:profileType", "Learner"]],
+                    [["?institutions", "acd:profileType", "Institution"]]
+                  ]
+                }
+              ],
+              [
+                {
+                  "union": [
+                    [["?employers", "acd:profileType", "Employer"]],
+                    [["?achievements", "type", "clr:AchievementSubject"]]
+                  ]
+                }
+              ]
             ]
-          }],
-          [{
+          }
+        ],
+        [
+          {
             "union": [
-              [["?employers", "acd:profileType", "Employer"]],
-              [["?achievements", "type", "clr:AchievementSubject"]]
+              [
+                {
+                  "union": [
+                    [["?courses", "clr:achievementType", "Course"]],
+                    [["?degrees", "clr:achievementType", "Degree"]]
+                  ]
+                }
+              ],
+              [
+                {
+                  "union": [
+                    [["?licenses", "clr:achievementType", "License"]],
+                    [["?awards", "clr:achievementType", "Award"]]
+                  ]
+                }
+              ]
             ]
-          }]
+          }
         ]
-      }],
-      [{
-        "union": [
-          [{
-            "union": [
-              [["?courses", "clr:achievementType", "Course"]],
-              [["?degrees", "clr:achievementType", "Degree"]]
-            ]
-          }],
-          [["?licenses", "clr:achievementType", "License"]]
-        ]
-      }]
-    ]
-  }]
+      ]
+    }
+  ]
 }
