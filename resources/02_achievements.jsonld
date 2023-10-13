@@ -778,20 +778,20 @@
       "clr:description": "The Civil Engineer of the Year Award recognizes those who showed excellence in civil engineering in the state of North Carolina."
     },
     {
-      "id": "acd:achievements/ASCENC/awards/mostImprovedSportsmanship",
+      "id": "acd:achievements/FU/awards/mostImprovedSportsmanship",
       "type": "clr:Achievement",
       "clr:creator": {
-        "id": "acd:institutions/ascenc"
+        "id": "acd:institutions/fu"
       },
       "clr:achievementType": "Award",
       "clr:name": "Most Improved Sportsmanship",
       "clr:description": "The Most Improved Sportsmanship Award recognizes those who had such deplorably bad attitudes that by the end of the semester literally any positive energy was a HUGE improvement."
     },
     {
-      "id": "acd:achievements/ASCENC/awards/tiniestMouse",
+      "id": "acd:achievements/FU/awards/tiniestMouse",
       "type": "clr:Achievement",
       "clr:creator": {
-        "id": "acd:institutions/ascenc"
+        "id": "acd:institutions/fu"
       },
       "clr:achievementType": "Award",
       "clr:name": "Tiniest Mouse",
