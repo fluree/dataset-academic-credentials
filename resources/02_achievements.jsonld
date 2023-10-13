@@ -785,7 +785,7 @@
       },
       "clr:achievementType": "Supervised Experience",
       "clr:name": "Bridge Inspection Drone Maintainer",
-      "clr:description": "throughout Lucias time supporting the Mantainance Team for Bridges and Inspecting Drones that support, via inspection, the mantanance of bridges (among other bridge-like structures and activities such as tunnels and the fallout of the 2024 Pooh-Sticks Olympic games) her clarity of thought and brevity of mantainance has inspired each of us to mantain bridges more thoroughly and inspect not only ourselves, but each other, in our ongoing quest of optimal drone<>bridge coverage"
+      "clr:description": "Support the Maintainance Team for Bridges and Inspecting Drones in their responsibilites maintaining bridge inspection drones."
     },
     {
       "id": "acd:achievements/FU/windmillspinnerII",
@@ -795,7 +795,7 @@
       },
       "clr:achievementType": "Supervised Experience",
       "clr:name": "Wind Mill Spinner",
-      "clr:description": "9 Months alone at sea, equipped only with her flip flps and duct tape, Lucia heroically spun faulty windmills until help arrived just in the nick of time!"
+      "clr:description": "Responsibilites include repair and maintenance of legacy windmills off the coast of Bermuda."
     },
     {
       "id": "acd:achievements/FU/bullfighting112",
@@ -805,7 +805,7 @@
       },
       "clr:achievementType": "Supervised Experience",
       "clr:name": "Bullfighting Lab Assistant",
-      "clr:description": "Designed, serviced, and tested mechanical bulls designed to promote healthy sense of competition in disadvantaged middle schools"
+      "clr:description": "Design, service, and test mechanical bulls designed to promote a healthy sense of competition in disadvantaged middle schools."
     }
   ]
 }
