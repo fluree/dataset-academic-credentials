@@ -778,6 +778,36 @@
       "clr:description": "The Civil Engineer of the Year Award recognizes those who showed excellence in civil engineering in the state of North Carolina."
     },
     {
+      "id": "acd:achievements/FU/BIDMMMMM",
+      "type": "clr:Achievement",
+      "clr:creator": {
+        "id": "acd:institutions/fu"
+      },
+      "clr:achievementType": "Supervised Experience",
+      "clr:name": "Bridge Inspection Drone Maintainer",
+      "clr:description": "Support the Maintainance Team for Bridges and Inspecting Drones in their responsibilites maintaining bridge inspection drones."
+    },
+    {
+      "id": "acd:achievements/FU/windmillspinnerII",
+      "type": "clr:Achievement",
+      "clr:creator": {
+        "id": "acd:institutions/fu"
+      },
+      "clr:achievementType": "Supervised Experience",
+      "clr:name": "Wind Mill Spinner",
+      "clr:description": "Responsibilites include repair and maintenance of legacy windmills off the coast of Bermuda."
+    },
+    {
+      "id": "acd:achievements/FU/bullfighting112",
+      "type": "clr:Achievement",
+      "clr:creator": {
+        "id": "acd:institutions/fu"
+      },
+      "clr:achievementType": "Supervised Experience",
+      "clr:name": "Bullfighting Lab Assistant",
+      "clr:description": "Design, service, and test mechanical bulls designed to promote a healthy sense of competition in disadvantaged middle schools."
+    },
+    {
       "id": "acd:achievements/FU/awards/mostImprovedSportsmanship",
       "type": "clr:Achievement",
       "clr:creator": {
