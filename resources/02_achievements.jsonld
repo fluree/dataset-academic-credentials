@@ -1,5 +1,5 @@
 {
-  "@id": "academic-credentials-dataset",
+  "https://ns.flur.ee/ledger#ledger": "academic-credentials-dataset",
   "@graph": [
     {
       "id": "acd:achievements/FU/MAT117",

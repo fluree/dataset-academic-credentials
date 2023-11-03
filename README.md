@@ -64,11 +64,11 @@ Here are some queries you can send to confirm you haven't missed anything. We ne
 curl -H "Content-Type:application/json" --data "@resources/queries/summary_stats.json" localhost:58090/fluree/query
 ``` 
 
-  expected result (3 Learners, 10 Institutions, 2 Employers, 46 Achievements, 43 Courses, 1 Degree, and 12 Licenses):
+  expected result (3 Learners, 10 Institutions, 2 Employers, 51 Achievements, 43 Courses, 1 Degree, 12 Licenses, and 13 Awards):
 
 
 ```json
-[[3,10,2,46,43,1,12]]
+[[3,10,2,51,43,1,12,13]]
 ```
 
 1. Find Freddy with [resources/queries/find_freddy.json](resources/queries/find_freddy.json)
