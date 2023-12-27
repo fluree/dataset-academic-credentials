@@ -1,14 +1,16 @@
 {
   "from": "academic-credentials-dataset",
+  "@context": {
+    "clr": "https://purl.imsglobal.org/spec/vc/ob/vocab.html#",
+    "acd": "https://academic-credential-dataset.net/ns/",
+    "vc": "https://w3.org/2018/credentials#"
+  },
   "select": { "?fredsCreds": ["*"] },
-  "where": [
-    [
-      "?fredsAssertions",
-      "acd:recipient",
-      {
-        "id": "acd:learners/freddyyeti1"
-      }
-    ],
-    ["?fredsCreds", "clr:credentialSubject", "?fredsAssertions"]
-  ]
+  "where": {
+    "@id": "?fredsCreds",
+    "clr:credentialSubject": {
+      "@id": "?fredAssertions",
+      "acd:recipient": { "@id": "acd:learners/freddyyeti1" }
+    }
+  }
 }

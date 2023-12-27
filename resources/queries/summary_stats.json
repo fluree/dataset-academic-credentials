@@ -1,5 +1,9 @@
 {
   "from": "academic-credentials-dataset",
+  "@context": {
+    "clr": "https://purl.imsglobal.org/spec/vc/ob/vocab.html#",
+    "acd": "https://academic-credential-dataset.net/ns/"
+  },
   "select": [
     "(count ?learners)",
     "(count ?institutions)",
@@ -11,53 +15,70 @@
     "(count ?awards)"
   ],
   "where": [
-    {
-      "union": [
+    [
+      "union",
+      [
         [
-          {
-            "union": [
-              [
-                {
-                  "union": [
-                    [["?learners", "acd:profileType", "Learner"]],
-                    [["?institutions", "acd:profileType", "Institution"]]
-                  ]
-                }
-              ],
-              [
-                {
-                  "union": [
-                    [["?employers", "acd:profileType", "Employer"]],
-                    [["?achievements", "type", "clr:AchievementSubject"]]
-                  ]
-                }
-              ]
+          "union",
+          [
+            [
+              "union",
+              {
+                "@id": "?learners",
+                "acd:profileType": "Learner"
+              },
+              {
+                "@id": "?institutions",
+                "acd:profileType": "Institution"
+              }
             ]
-          }
-        ],
+          ],
+          [
+            [
+              "union",
+              {
+                "@id": "?employers",
+                "acd:profileType": "Employer"
+              },
+              {
+                "@id": "?achievements",
+                "@type": "clr:AchievementSubject"
+              }
+            ]
+          ]
+        ]
+      ],
+      [
         [
-          {
-            "union": [
-              [
-                {
-                  "union": [
-                    [["?courses", "clr:achievementType", "Course"]],
-                    [["?degrees", "clr:achievementType", "Degree"]]
-                  ]
-                }
-              ],
-              [
-                {
-                  "union": [
-                    [["?licenses", "clr:achievementType", "License"]],
-                    [["?awards", "clr:achievementType", "Award"]]
-                  ]
-                }
-              ]
+          "union",
+          [
+            [
+              "union",
+              {
+                "@id": "?courses",
+                "clr:achievementType": "Course"
+              },
+              {
+                "@id": "?degrees",
+                "clr:achievementType": "Degree"
+              }
             ]
-          }
+          ],
+          [
+            [
+              "union",
+              {
+                "@id": "?licenses",
+                "clr:achievementType": "License"
+              },
+              {
+                "@id": "?awards",
+                "clr:achievementType": "Award"
+              }
+            ]
+          ]
         ]
       ]
-    }
+    ]
   ]
 }

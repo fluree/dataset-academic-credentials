@@ -1,9 +1,15 @@
 {
   "from": "academic-credentials-dataset",
+  "@context": {
+    "schema": "http://schema.org/",
+    "clr": "https://purl.imsglobal.org/spec/vc/ob/vocab.html#",
+    "acd": "https://academic-credential-dataset.net/ns/"
+  },
   "select": {
     "?s": ["*"]
   },
-  "where": [
-    [ "?s", "schema:givenName", "Freddy" ]
-  ]
+  "where": {
+    "@id": "?s",
+    "schema:givenName": "Freddy"
+  }
 }
